@@ -1,0 +1,39 @@
+﻿Build started 4/15/2016 4:18:06 PM.
+     1>Project "C:\Users\micha\Desktop\Projects\C++\Project 3\Project 3.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\Project 3.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AddToCartDlg.cpp CheckoutView.cpp CrtView.cpp InventoryView.cpp MainFrm.cpp "Project 3.cpp" "Project 3Doc.cpp" "Project 3View.cpp" QuitDlg.cpp RemoveFrmCartDlg.cpp TestDialog.cpp
+         AddToCartDlg.cpp
+         CheckoutView.cpp
+         CrtView.cpp
+         InventoryView.cpp
+         MainFrm.cpp
+         Project 3.cpp
+         Project 3Doc.cpp
+         Project 3View.cpp
+         QuitDlg.cpp
+         RemoveFrmCartDlg.cpp
+         TestDialog.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D NDEBUG /D _UNICODE /D UNICODE /l"0x0409" /IRelease\ /nologo /fo"Release\Project 3.res" "Project 3.rc" 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\micha\Desktop\Projects\C++\Project 3\Release\Project 3.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\micha\Desktop\Projects\C++\Project 3\Release\Project 3.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\micha\Desktop\Projects\C++\Project 3\Release\Project 3.lib" /MACHINE:X86 /SAFESEH "Release\Project 3.res"
+         Release\AddToCartDlg.obj
+         Release\CheckoutView.obj
+         Release\CrtView.obj
+         Release\InventoryView.obj
+         Release\MainFrm.obj
+         "Release\Project 3.obj"
+         "Release\Project 3Doc.obj"
+         "Release\Project 3View.obj"
+         Release\QuitDlg.obj
+         Release\RemoveFrmCartDlg.obj
+         Release\stdafx.obj
+         Release\TestDialog.obj
+         Generating code
+         Finished generating code
+         Project 3.vcxproj -> C:\Users\micha\Desktop\Projects\C++\Project 3\Release\Project 3.exe
+     1>Done Building Project "C:\Users\micha\Desktop\Projects\C++\Project 3\Project 3.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:09.85

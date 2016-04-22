@@ -1,0 +1,24 @@
+﻿Build started 4/22/2016 11:27:54 AM.
+     1>Project "C:\Users\micha\Desktop\Projects\C++\EditorFinal\EditorFinal.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt menu2.cpp
+         menu2.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\micha\Desktop\Projects\C++\EditorFinal\Release\EditorFinal.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\micha\Desktop\Projects\C++\EditorFinal\Release\EditorFinal.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\micha\Desktop\Projects\C++\EditorFinal\Release\EditorFinal.lib" /MACHINE:X86 /SAFESEH Release\script.res
+         Release\CopyFileDialog.obj
+         Release\DirDialog.obj
+         Release\menu2.obj
+         Release\MoveFileDialog.obj
+         Release\NewFileDialog.obj
+         Release\RemoveDirDialog.obj
+         Release\RenameDialog.obj
+         Release\TypeDialog.obj
+         Generating code
+         Finished generating code
+         EditorFinal.vcxproj -> C:\Users\micha\Desktop\Projects\C++\EditorFinal\Release\EditorFinal.exe
+     1>Done Building Project "C:\Users\micha\Desktop\Projects\C++\EditorFinal\EditorFinal.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.00

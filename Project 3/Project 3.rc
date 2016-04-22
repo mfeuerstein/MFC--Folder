@@ -1,0 +1,504 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#include ""res\\Project3.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""      // Standard components\r\n"
+    "#include ""afxprint.rc""    // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Project 3.ico"
+IDR_ProjectTYPE         ICON                    "res\\Project 3Doc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&Shop Menu"
+    BEGIN
+        MENUITEM "Test",                        ID_SHOPMENU_TEST
+        MENUITEM "View Inventory",              ID_SHOPMENU_VIEWINVENTORY
+        MENUITEM "Add to Cart",                 ID_SHOPMENU_ADDTOCART
+        MENUITEM "Remove from Cart",            ID_SHOPMENU_REMOVEFROMCART
+        MENUITEM "Display Contents of Cart",    ID_SHOPMENU_DISPLAYCONTENTSOFCART
+        MENUITEM "Checkout",                    ID_SHOPMENU_CHECKOUT
+        MENUITEM "Quit",                        ID_SHOPMENU_QUIT
+        MENUITEM "new",                         ID_SHOPMENU_NEW
+    END
+    MENUITEM "&About Project 3...",         ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Project 3"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "Project 3, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2015",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_VIEW_INV DIALOGEX 0, 0, 836, 503
+STYLE DS_SETFONT | DS_CENTER | WS_CHILD | WS_VSCROLL | WS_HSCROLL
+FONT 10, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    LTEXT           "Stock Number",IDC_STATIC_INV_STOCK,84,55,49,11
+    LTEXT           "Quantity",IDC_STATIC_INV_QUANT,241,55,49,11
+    LTEXT           "Description",IDC_STATIC_INV_HAMMER,403,55,49,11
+    LTEXT           "Price Per Each",IDC_STATIC_INV_PRICE,575,55,49,11
+    LISTBOX         IDC_VIEW_INV_STOCK,83,100,84,138,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_VIEW_INV_QUANT,239,100,84,138,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_VIEW_INV_DESC,402,100,84,138,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_VIEW_INV_PRICE,575,100,84,138,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ADD_TO_CART DIALOGEX 0, 0, 309, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add to Cart"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Add Item",IDD_ADD_ITEM_BTTN,198,157,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancel",2,252,157,50,14
+    LTEXT           "Stock Number",IDC_STATIC_ATC_ITEM,24,28,32,15
+    LTEXT           "Quantity",IDC_STATIC_ATC_QUANT,24,66,32,15
+    EDITTEXT        IDC_EDIT_ATC_PRICE,213,68,48,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Price Per Each",IDC_STATIC_ATC_PRICE,155,68,54,15
+    EDITTEXT        IDC_EDIT_ATC_DESC,212,30,75,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Description",IDC_STATIC_ATC_DESC,157,30,44,15
+    COMBOBOX        IDC_ATC_COMBO_ITEMS,71,30,48,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ATC_COMBO_QUANTS,71,65,48,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_REMOVE_FROM_CART DIALOGEX 0, 0, 309, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Remove from Cart"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Remove Item",IDD_REMOVE_ITEM_BTTN,198,157,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancel",2,252,157,50,14
+    COMBOBOX        IDC_LIST_RFC_ITEMS,79,28,48,16,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Stock Number",IDC_STATIC_RFC_ITEM,24,28,32,15
+    COMBOBOX        IDC_LIST_RFC_QUANT,79,66,48,16,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Quantity",IDC_STATIC_RFC_QUANT,24,66,32,15
+    EDITTEXT        IDC_EDIT_RFC_PRICE,228,68,48,18,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Price Per Each",IDC_STATIC_RFC_PRICE,159,68,45,15
+    EDITTEXT        IDC_EDIT_RFC_DESC,227,30,48,18,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Description",IDC_STATIC_RFC_DESC,157,30,46,15
+END
+
+IDD_VIEW_CART DIALOGEX 0, 0, 836, 503
+STYLE DS_SETFONT | DS_CENTER | WS_CHILD
+FONT 10, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    LTEXT           "Stock Number",IDC_STATIC_CRT_STOCK,74,62,49,11
+    LTEXT           "Quantity",IDC_STATIC_CRT_QUANT,210,62,49,11
+    LTEXT           "Description",IDC_STATIC_CRT_DESC,346,62,49,11
+    LTEXT           "Price Per Each",IDC_STATIC_CRT_PRICE,491,62,49,11
+    LISTBOX         IDC_VIEW_CRT_STOCK,73,107,84,138,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_VIEW_CRT_QUANT,208,107,84,138,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_VIEW_CRT_DESC,345,107,84,138,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_VIEW_CRT_PRICE,491,107,84,138,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Extension",IDC_STATIC_CRT_EXT,630,61,49,11
+    LISTBOX         IDC_VIEW_CRT_EXTENSION,630,107,84,138,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_VIEW_CHECKOUT DIALOGEX 0, 0, 836, 503
+STYLE DS_SETFONT | DS_CENTER | WS_CHILD
+FONT 10, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    LTEXT           "Stock Number",IDC_STATIC_CRT_STOCK,74,62,49,11
+    LTEXT           "Quantity",IDC_STATIC_CRT_QUANT,210,62,49,11
+    LTEXT           "Description",IDC_STATIC_CRT_DESC,346,62,49,11
+    LTEXT           "Price Per Each",IDC_STATIC_CRT_PRICE,491,62,49,11
+    LISTBOX         IDC_VIEW_RT_STOCK,73,107,84,138,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_VIEW_CRT_QUANT,208,107,84,138,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_VIEW_CRT_DESC,345,107,84,138,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_VIEW_CRT_PRICE,491,107,84,138,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Extension",IDC_STATIC_CRT_EXT,630,61,49,11
+    LISTBOX         IDC_VIEW_CRT_EXTENSION,630,107,84,138,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Tax (6.25%)",IDC_STATIC_TAX,69,323,50,8
+    LTEXT           "Shipping",IDC_STATIC_SHIP,69,345,50,8
+    LTEXT           "Total",IDC_STATIC_TOTAL,69,367,50,8
+    EDITTEXT        IDC_EDIT_TAX,130,323,42,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SHIP,130,345,42,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_TOTAL,130,367,43,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Name",IDC_STATIC_NAME,510,322,50,8
+    LTEXT           "Address",IDC_STATIC_ADDRESS,510,344,50,8
+    EDITTEXT        IDC_EDIT_NAME,571,322,106,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ADDRESS,571,344,104,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_QUIT DIALOGEX 0, 0, 287, 114
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 12, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDOK,145,93,50,14
+    PUSHBUTTON      "No",IDCANCEL,214,93,50,14
+    LTEXT           "Are you sure you want to quit?",IDC_STATIC_QUITMESSAGE,84,44,115,20
+END
+
+IDD_DIALOG_TEST DIALOGEX 0, 0, 311, 179
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Test Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,200,158,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,254,158,50,14
+    COMBOBOX        IDC_TEST_COMBO,73,36,48,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "Project 3"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Project 3.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "Project 3.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_VIEW_INV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 820
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 487
+    END
+
+    IDD_ADD_TO_CART, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_REMOVE_FROM_CART, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_VIEW_CART, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 829
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 496
+    END
+
+    IDD_VIEW_CHECKOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 829
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 496
+    END
+
+    IDD_DIALOG_QUIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_DIALOG_TEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Project 3\n\nProject 3\n\n\nProject3.Document\nProject 3.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Project 3"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_DIRECT    "Print the active document using current options\nQuick Print"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle Status Bar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#include "res\Project3.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"      // Standard components
+#include "afxprint.rc"    // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

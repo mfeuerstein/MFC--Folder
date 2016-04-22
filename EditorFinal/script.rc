@@ -1,0 +1,318 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MAINMENU MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Type\t Ctrl+T",              ID_FILE_TYPE
+        MENUITEM "&Move\t Ctrl+M",              ID_FILE_MOVE
+        MENUITEM "&Copy\t Ctrl+C",              ID_FILE_COPY
+        MENUITEM "R&ename\t Ctrl+E",            ID_FILE_RENAME
+        MENUITEM "&DIR\t Ctrl+D",               ID_FILE_DIR
+        MENUITEM "M&KDIR\t Ctrl+K",             ID_FILE_NEW
+        MENUITEM "&RMDIR\t Ctrl+R",             ID_FILE_RMDIR
+        MENUITEM "C&lear\tCtrl+L",              IDM_FILE_CLEAR
+        MENUITEM "&Print\tCtrl+P",              IDM_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "&Quit\tCtrl+Q",               IDM_FILE_QUIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Find\tCtrl+F",               IDM_FILE_FIND
+        MENUITEM "De&lete Text\tCtrl+L",        IDM_FILE_DELETE
+        MENUITEM "&Undo\tCtrl+U",               IDM_FILE_UNDO
+        MENUITEM "Cu&t\tCtrl+T",                IDM_FILE_CUT
+        MENUITEM "Copy\tCtrl+C",                IDM_FILE_COPY
+        MENUITEM "Pa&ste\tCtrl+S",              IDM_FILE_PASTE
+    END
+    POPUP "&Info"
+    BEGIN
+        MENUITEM "&Date/Time\tCtrl+D+alt",      IDM_FILE_DATE
+    END
+    POPUP "Games"
+    BEGIN
+        MENUITEM "BattleOffice",                ID_GAMES_BATTLEOFFICE
+        MENUITEM "Henway",                      ID_GAMES_HENWAY
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+MAINACCELTABLE ACCELERATORS
+BEGIN
+    "L",            IDM_FILE_ABOUT,         VIRTKEY, CONTROL, NOINVERT
+    "B",            IDM_FILE_BINARY,        VIRTKEY, CONTROL, NOINVERT
+    "R",            IDM_FILE_CLEAR,         VIRTKEY, CONTROL, NOINVERT
+    "C",            IDM_FILE_COPY,          VIRTKEY, CONTROL, NOINVERT
+    "T",            IDM_FILE_CUT,           VIRTKEY, CONTROL, NOINVERT
+    "D",            IDM_FILE_DATE,          VIRTKEY, CONTROL, NOINVERT
+    "L",            IDM_FILE_DELETE,        VIRTKEY, CONTROL, NOINVERT
+    "F",            IDM_FILE_FIND,          VIRTKEY, CONTROL, NOINVERT
+    "O",            IDM_FILE_OPEN,          VIRTKEY, CONTROL, NOINVERT
+    "S",            IDM_FILE_PASTE,         VIRTKEY, CONTROL, NOINVERT
+    "P",            IDM_FILE_PRINT,         VIRTKEY, CONTROL, NOINVERT
+    "Q",            IDM_FILE_QUIT,          VIRTKEY, CONTROL, NOINVERT
+    "V",            IDM_FILE_SAVE,          VIRTKEY, CONTROL, NOINVERT
+    "U",            IDM_FILE_UNDO,          VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_FILE_NEW,            VIRTKEY, ALT, NOINVERT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDM_FILE_ABOUT DIALOG 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MiniEdit"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,119,28,50,14
+    CTEXT           "By Arland J. Richmond, Ph.D. November 21,1997 All Rights Reserved",IDC_STATIC,7,15,100,39,SS_SUNKEN | WS_BORDER
+END
+
+IDD_DIALOG_MOVEFILE DIALOGEX 0, 0, 309, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MOVE"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,156,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,156,50,14
+    EDITTEXT        IDC_EDIT_CURRENTPATH,129,57,112,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NEWPATH,129,96,111,14,ES_AUTOHSCROLL
+    LTEXT           "Current Path",IDC_STATIC_COPY_OLD,62,58,43,8
+    LTEXT           "New Path",IDC_STATIC_COPY_NEW,63,98,47,8
+END
+
+IDD_DIALOG_COPY_FILE DIALOGEX 0, 0, 309, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Copy"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,156,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,156,50,14
+    EDITTEXT        IDC_EDIT_CURRENTPATH,119,56,110,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NEWPATH,119,97,111,14,ES_AUTOHSCROLL
+    LTEXT           "Current Path",IDC_STATIC_COPY_OLD,61,58,43,8
+    LTEXT           "New Path",IDC_STATIC_COPY_NEW,62,99,47,8
+END
+
+IDD_DIALOG_NEWFILE DIALOGEX 0, 0, 309, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MKDIR"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,156,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,156,50,14
+    EDITTEXT        IDC_EDIT_NEW_PATH,128,55,105,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NEW_NAME,128,96,105,14,ES_AUTOHSCROLL
+    LTEXT           "Path for Directory",IDC_STATIC_COPY_OLD,58,58,66,8
+    LTEXT           "Directory Name",IDC_STATIC_COPY_NEW,59,98,61,8
+END
+
+IDD_DIALOG_TYPE DIALOGEX 0, 0, 309, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TYPE"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,156,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,156,50,14
+    EDITTEXT        IDC_EDIT_TYPE_PATH,131,75,105,14,ES_AUTOHSCROLL
+    LTEXT           "Path of Text File",IDC_STATIC_DIR_PATH,65,77,52,8
+END
+
+IDD_DIALOG_REMOVE_DIR DIALOGEX 0, 0, 311, 179
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RMDIR"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,200,158,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,254,158,50,14
+    EDITTEXT        IDC_EDIT_REMOVE_DIR,103,73,121,14,ES_AUTOHSCROLL
+    LTEXT           "Path",IDC_STATIC_DIR_PATH,62,75,34,8
+END
+
+IDD_DIALOG_RENAME DIALOGEX 0, 0, 311, 179
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RENAME"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,200,158,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,254,158,50,14
+    EDITTEXT        IDC_EDIT_RENAME_OLD,124,57,105,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RENAME_NEW,124,98,105,14,ES_AUTOHSCROLL
+    LTEXT           "Current Path",IDC_STATIC_COPY_OLD,67,59,43,8
+    LTEXT           "New Path",IDC_STATIC_COPY_NEW,68,100,47,8
+END
+
+IDD_DIALOG_DIR DIALOGEX 0, 0, 311, 179
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DIR"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,200,158,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,254,158,50,14
+    EDITTEXT        IDC_EDIT_DIR,112,72,105,14,ES_AUTOHSCROLL
+    LTEXT           "Path",IDC_STATIC_DIR_PATH,64,74,43,8
+END
+
+IDD_SPLASH DIALOGEX 0, 0, 310, 178
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 14, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "WINDOWS MANIA",IDC_STATIC,126,75,40,24
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDM_FILE_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_DIALOG_MOVEFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DIALOG_COPY_FILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DIALOG_NEWFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DIALOG_TYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DIALOG_REMOVE_DIR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_DIALOG_RENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_DIALOG_DIR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_SPLASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
